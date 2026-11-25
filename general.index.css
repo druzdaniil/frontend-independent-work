@@ -1,0 +1,113 @@
+:root {
+   --bg-start: #1e1b4b;
+   --bg-end: #0f172a;
+   --card-bg: rgba(255, 255, 255, 0.06);
+   --card-border: rgba(255, 255, 255, 0.12);
+   --text: #f8fafc;
+   --text-muted: #94a3b8;
+   --accent: #38bdf8;
+}
+
+body {
+   padding: 60px 20px;
+   font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+   color: var(--text);
+   background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+   background-attachment: fixed;
+}
+
+.header {max-width: 1100px;margin: 0 auto 50px;text-align: center;
+}
+
+.header__title {margin-bottom: 12px;font-size: 44px;font-weight: 800;
+}
+
+.header__student {
+font-size: 20px;
+color: var(--text-muted);
+}
+
+.labs {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 28px;
+    max-width: 1100px;
+margin: 0 auto;
+}
+
+.lab-card {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+padding: 28px;
+background-color: var(--card-bg);
+border: 1px solid var(--card-border);
+border-radius: 20px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.lab-card:hover {
+   transform: translateY(-4px);
+   border-color: var(--accent);
+}
+
+.lab-card__number {
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: var(--accent);
+}
+
+.lab-card__title {
+   font-size: 26px;
+   font-weight: 700;
+}
+
+.tech-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.tech-tag {
+   padding: 4px 16px;
+   font-size: 14px;
+   font-weight: 700;
+   border-radius: 999px;
+   border: 1.5px solid currentColor;
+}
+
+.tech-tag--html {
+   color: #fb923c;
+}
+
+.tech-tag--css {
+   color: #60a5fa;
+}
+
+.tech-tag--js {
+   color: #facc15;
+}
+
+.lab-card__description {
+   flex-grow: 1;
+   color: var(--text-muted);
+}
+
+.lab-card__link {
+   padding: 10px 24px;
+   font-weight: 700;
+   color: white;
+   text-decoration: none;
+   background-color: #38bdf8;
+   border-radius: 12px;
+   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.lab-card__link:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.45);
+}
