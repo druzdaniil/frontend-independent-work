@@ -1,0 +1,116 @@
+:root {
+	--color-bg: #070b1f;
+	--color-field: #ecdcff;
+	--color-field-text: #24143d;
+	--color-accent: #b98cff;
+	--color-accent-hover: #cfaeff;
+	--color-error: #ff8fa3;
+
+	--ball-size: min(90vw, 60dvh, 480px);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	padding: 24px 16px;
+	background-color: var(--color-bg);
+	font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	width: 100%;
+	max-width: 640px;
+}
+
+.ask-form {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	width: 100%;
+}
+
+.ask-form__field {
+	flex-grow: 1;
+	min-width: 0;
+}
+
+.ask-form__input {
+	width: 100%;
+	padding: 14px 20px;
+	border: 2px solid transparent;
+	border-radius: 16px;
+	background-color: var(--color-field);
+	color: var(--color-field-text);
+	font-size: 1.125rem;
+	text-align: center;
+}
+
+.ask-form__input::placeholder {
+	color: #7a6a99;
+}
+
+.ask-form__input:focus-visible {
+	outline: none;
+	border-color: var(--color-accent);
+}
+
+.ask-form__input--invalid {
+	border-color: var(--color-error);
+}
+
+.ask-form__error {
+	min-height: 1.5em;
+	padding-top: 6px;
+	color: var(--color-error);
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.ask-form__btn {
+	padding: 14px 24px;
+	border: none;
+	border-radius: 16px;
+	background-color: var(--color-accent);
+	color: var(--color-bg);
+	font-size: 1.125rem;
+	font-weight: 600;
+	white-space: nowrap;
+	transition: background-color 0.2s;
+}
+
+.ask-form__btn:hover {
+	background-color: var(--color-accent-hover);
+}
+
+.ask-form__btn:focus-visible {
+	outline: 3px solid var(--color-accent-hover);
+	outline-offset: 3px;
+}
+
+.ball {
+	position: relative;
+	flex-shrink: 0;
+	width: var(--ball-size);
+	height: var(--ball-size);
+}
+
+.ball__image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.ball--default .ball__image--default,
+.ball--yes .ball__image--yes,
+.ball--no .ball__image--no,
+.ball--maybe .ball__image--maybe {
+	opacity: 1;
+}

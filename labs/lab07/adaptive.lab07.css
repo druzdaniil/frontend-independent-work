@@ -1,0 +1,30 @@
+@media (min-width: 1200px) {
+   :root {
+      --ball-size: min(45vw, 65dvh, 560px);
+   }
+
+   .app {
+      max-width: 720px;
+   }
+}
+
+@media (max-width: 600px) {
+   body {
+      padding: 16px 12px;
+   }
+
+   .app {
+      gap: 16px;
+   }
+
+   .ask-form {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+   }
+
+   .ask-form__input,
+   .ask-form__btn {
+      font-size: 1rem;
+   }
+}
