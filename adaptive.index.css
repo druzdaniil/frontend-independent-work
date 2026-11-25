@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+   body {
+      padding: 40px 16px;
+   }
+
+   .header__title {
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 600px) {
+   .header {
+      margin-bottom: 32px;
+   }
+
+   .header__title {
+      font-size: 26px;
+   }
+
+   .header__student {
+      font-size: 16px;
+   }
+
+   .labs {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .lab-card {
+      padding: 20px;
+   }
+
+   .lab-card__title {
+      font-size: 22px;
+   }
+}
