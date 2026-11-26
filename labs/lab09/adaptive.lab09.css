@@ -1,0 +1,50 @@
+@media (max-width: 900px) {
+   .game {
+      gap: 20px;
+      padding: 40px 24px;
+   }
+
+   .player__name {
+      font-size: 28px;
+   }
+
+   .player__card {
+      width: 150px;
+   }
+
+   .generate-btn {
+      padding: 18px 28px;
+      font-size: 20px;
+   }
+
+   .game__status {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 600px) {
+   .game {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 28px;
+      padding: 32px 16px;
+      border-radius: 20px;
+   }
+
+   .player {
+      gap: 14px;
+   }
+
+   .player__name {
+      font-size: 24px;
+   }
+
+   .player__score {
+      min-width: 110px;
+      font-size: 22px;
+   }
+
+   .player__card {
+      width: 120px;
+   }
+}

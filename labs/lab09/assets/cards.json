@@ -1,0 +1,11 @@
+[
+   { "name": "6", "value": 6, "image": "./assets/img/6.png" },
+   { "name": "7", "value": 7, "image": "./assets/img/7.png" },
+   { "name": "8", "value": 8, "image": "./assets/img/8.png" },
+   { "name": "9", "value": 9, "image": "./assets/img/9.png" },
+   { "name": "10", "value": 10, "image": "./assets/img/10.png" },
+   { "name": "Валет", "value": 2, "image": "./assets/img/jack.png" },
+   { "name": "Дама", "value": 3, "image": "./assets/img/queen.png" },
+   { "name": "Король", "value": 4, "image": "./assets/img/king.png" },
+   { "name": "Туз", "value": 11, "image": "./assets/img/ace.png" }
+]
